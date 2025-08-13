@@ -12,3 +12,8 @@
 /scripts
 /docs
 
+
+/generated/prisma
+
+
+.env
