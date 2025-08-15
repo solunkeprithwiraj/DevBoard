@@ -19,6 +19,6 @@
     "isolatedModules": false,
     "skipLibCheck": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "src/swagger-options.ts", "swagger-ui-express.d.ts"],
   "exclude": ["node_modules", "dist"]
 }
