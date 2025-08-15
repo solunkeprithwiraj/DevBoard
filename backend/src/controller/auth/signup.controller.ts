@@ -21,5 +21,13 @@ export const signup = async (req: Request, res: Response) => {
     data: { name, email, password: hashedPassword },
   });
 
-  res.status(201).json({ user });
+  res.status(201).json({
+    user: {
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      createdAt: user.createdAt,
+      updatedAt: user.updatedAt,
+    },
+  });
 };
